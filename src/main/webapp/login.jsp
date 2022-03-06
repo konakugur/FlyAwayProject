@@ -52,19 +52,17 @@
 	            <i class="fa fa-taxi fa-2x" aria-hidden="true"></i>
 	            <i class="fa fa-train fa-2x" aria-hidden="true"></i> </div>
 	        <hr>
-	        <p class="searchText"><strong>Search For Cheap Flights</strong></p>
+	        <p class="searchText"><strong>Search For Cheap Flights - Please keep in mind that tickets are sold only 3 days before the flight. </strong></p>
 	        <div class="row">
 	            <div class="col-sm-6" > <select name="cityFrom" class="custom-select custom-select-lg mr-sm-2" id="select">
 	                    <option value="" disabled="" selected="">From City/Airport</option>
 	                    <option value="Istanbul">Istanbul</option>
-	                    <option value="Mumbai">Mumbai</option>
 	                    <option value="Paris">Paris</option>
 	                    <option value="London">London</option>
 	                </select> </div>
 	            <div class="col-sm-6"> <select name="cityTo" class="custom-select custom-select-lg mr-sm-2" id="select2">
 	                    <option value="" disabled="" selected="">To City/Airport</option>
 	                    <option value="Istanbul">Istanbul</option>
-	                    <option value="Mumbai">Mumbai</option>
 	                    <option value="Paris">Paris</option>
 	                    <option value="London">London</option>
 	                </select> </div>
@@ -108,7 +106,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#datetimepicker1').datetimepicker({
-        	minDate: moment()
+        	minDate: moment(),
+        	format: 'MM/DD/YYYY'
         });
     });
 </script>

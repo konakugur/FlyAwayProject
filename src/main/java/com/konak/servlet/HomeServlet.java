@@ -137,24 +137,85 @@ public class HomeServlet extends HttpServlet {
 		flight.setPrice("100");
 		flight.setDate(date.plusDays(1));
 		flight.setTime("12:00 AM");
+		
 		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(1), "08:00"));
 		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(1), "13:00"));
 		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(1), "21:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "08:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "13:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "21:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "08:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "13:00"));
-		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "21:00"));
+		
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(1), "10:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(1), "15:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(1), "23:00"));
+		
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(1), "06:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(1), "15:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(1), "23:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(1), "02:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(1), "11:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(1), "19:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(1), "04:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(1), "13:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(1), "22:00"));
+		
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(1), "03:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(1), "10:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(1), "18:30"));
+		
+
+
+		
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "08:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "13:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(2), "21:00"));
+		
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(2), "10:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(2), "15:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(2), "23:00"));
+		
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(2), "06:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(2), "15:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(2), "23:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(2), "02:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(2), "11:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(2), "19:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(2), "04:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(2), "13:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(2), "22:00"));
+		
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(2), "03:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(2), "10:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(2), "18:30"));
+		
+		
+		
+		
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "08:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "13:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "Paris", "Turkish Airlines", "100", date.plusDays(3), "21:00"));
+		
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(3), "10:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(3), "15:00"));
+		addFlight(sessionFactory, new Flight("Istanbul", "London", "Turkish Airlines", "200", date.plusDays(3), "23:00"));
+		
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(3), "06:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(3), "15:00"));
 		addFlight(sessionFactory, new Flight("Paris", "Istanbul", "French Airlines", "100", date.plusDays(3), "23:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(3), "02:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(3), "11:00"));
+		addFlight(sessionFactory, new Flight("London", "Istanbul", "English Airlines", "200", date.plusDays(3), "19:00"));
+		
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(3), "04:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(3), "13:00"));
+		addFlight(sessionFactory, new Flight("London", "Paris", "English Airlines", "50", date.plusDays(3), "22:00"));
+		
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(3), "03:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(3), "10:30"));
+		addFlight(sessionFactory, new Flight("Paris", "London", "French Airlines", "150", date.plusDays(3), "18:30"));
+		
 	}
 
 	/**
