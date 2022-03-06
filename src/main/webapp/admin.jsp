@@ -15,9 +15,8 @@
 	</form>
 	
 	
-	
-	<form action="/FlyAwayProject/buy" method="post" >
-		<table class="table">
+	<p>All Flights</p>
+	<table class="table">
 		  <thead>
 		    <tr>
 		      <th scope="col">#</th>
@@ -42,9 +41,56 @@
 			      <td>${flight.price} $</td>
 			    </tr>
 		  	</c:forEach>
-		  </tbody>
-		</table>
-	</form>
+		</tbody>
+	</table>
+	
+	<table class="table">
+		  <thead>
+		    <tr>
+		     
+		      <th scope="col">Sources</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<c:forEach items="${sources}" var="source">
+		  		<tr>
+			      <td>${source}</td>
+			    </tr>
+		  </c:forEach>
+		</tbody>
+	</table>
+	
+	<table class="table">
+		  <thead>
+		    <tr>
+		     
+		      <th scope="col">Destinations</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<c:forEach items="${destinations}" var="destination">
+		  		<tr>
+			      <td>${destination}</td>
+			    </tr>
+		  </c:forEach>
+		</tbody>
+	</table>
+	
+	<table class="table">
+		  <thead>
+		    <tr>
+		     
+		      <th scope="col">Airlines</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<c:forEach items="${airlines}" var="airline">
+		  		<tr>
+			      <td>${airline}</td>
+			    </tr>
+		  </c:forEach>
+		</tbody>
+	</table>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
